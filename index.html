@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="assets/styles/main.css" rel="stylesheet" type="text/css">
+  <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+  <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script>
+
+</head>
+
+<body>
+
+    <!--  Sidebar -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="col-md-3 col-lg-2 float-md-left sidebar pb-2">
+          <div class="sidebar-header pb-2 pt-4">
+            <img src="https://scontent.fbed1-1.fna.fbcdn.net/v/t1.0-9/29261949_10211212532649363_8991608884233764864_n.jpg?_nc_cat=0&oh=6764d209ad49603d3116d93b35783a23&oe=5C315437" class="profile-img col-8 mb-3 offset-2">
+            <h3 class="name col-12 text-center">
+                  Julian Sirkin
+                </h3>
+            <ul class="icon-list list-inline text-center pb-3">
+              <li class="list-inline-item">
+                <a href="mailto:juliansirkn@gmail.com" class="fas fa-at" id="email"></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/julian-sirkin" target="_blank" class="fab fa-github" id="github"></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="fab fa-linkedin" href="https://www.linkedin.com/in/julian-sirkin/" target="_blank" id="linkedin"></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="pictures/Julian_Sirkin_Resume.pdf" class="fas fa-file" id="resume" download target="_blank"></a>
+              </li>
+            </ul>
+        </div>
+          <ul class="sidebar-nav list-unstyled components d-block text-center">
+            <li class="nav-item options py-2 mb-4" id="aboutMe">
+              <a href="#" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item options py-2 mb-4" id="show-capstone">
+              <a class="nav-link" href="#">
+                    Capstone
+                  </a>
+            </li>
+            <li class="nav-item options py-2 mb-4" id="showGroupProject">
+              <a class="nav-link" href="#">
+                Group Project
+              </a>
+            </li>
+            <li class="nav-item options py-2 mb-4" id="showWorkoutTracker">
+              <a class="nav-link" href="#">
+                Workout Tracker
+              </a>
+            </li>
+            <li class="nav-item options py-2 mb-4" id="tic-tac-toe">
+              <a class="nav-link" href="#">
+                Tic Tac Toe
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Main content wrapper -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid col-md-9 col-lg-10 float-right">
+                <!-- About me page -->
+              <div class=" p-3 p-lg-4 d-column ">
+                  <div id="aboutMePage" class="">
+                    <h2 id="about-me" class="text-center display-block my-5">About Me</h2>
+                    <p class="lead col-8 offset-2 ">
+                      As a web developer I love breaking down problems in a pragmatic way, leaning heavily on skills I learned both regularly pushing my mind with games like chess and go, working as a chef for 8 years in high volume fine dining environments.
+                    </p>
+                    <p class="col-8 offset-2 d-flex">
+                      Many of the skills from running production kitchen in addition to creating my own pop up restaurant translate to technology. Chief among those skills are the hard/soft skills needed to work with and leading a team. As a sous chef, I had to lead by example,
+                      be a resource for my cooks, at the same time maintain the humility to fall in line and be “one of the cooks” - making sure that my tasks always exceeded the kitchen’s standards while completing my jobs early so I could be available to others.
+                      While always being under deadlines that could not be missed, I learned how to prioritize and execute, while remaining calm under pressure.
+                    </p>
+                    <p class="col-8 offset-2 d-flex">
+                      Moving forward I am excited over the prospect of applying these skills to the new technology I continue to learn. I look forwarding to gaining more skills, applying those to what may feel like an insurmountable problem, but make progress, as I continue
+                      to develop further.
+                    </p>
+                    <p class="col-8 offset-2 d-flex">
+                      For contact information and a copy of my resume, click on the links below my name on the sidebar.
+                    </p>
+                  </div>
+                </div>
+
+                <!--  Show resume -->
+                <div class=" p-3 p-lg-4 d-column ">
+                    <div id="resumePage" class="hidden">
+
+                    </div>
+                  </div>
+
+                <!-- Capstone Project Page -->
+                <div  class="container">
+                  <div id="capstonePage" class="project hidden">
+                    <h2 class="projectName col-med-6 text-center display-block jusitfy-center mb-3 pb-2 mt-5 mt-md-3">
+                      Recipe Tracker
+                    </h2>
+                    <div class="imgAndLinks">
+                      <div class="float-md-left col-md-4 offset-md-2 mb-4">
+                        <img class="projectimg col-12" src="https://preview.ibb.co/igDWVf/Screen-Shot-2018-10-21-at-9-18-35-PM.png">
+                      </div>
+
+                      <div class="float-md-left col-md-2 mt-4 mt-md-0 prjbtncontainer">
+                        <button class="btn d-block float-md-left mb-md-4 projectbtns">
+                        <a href="https://github.com/julian-sirkin/groceryFrontEnd" target="_blank">Front End Repo</a>
+                        </button>
+                        <button class="btn d-block float-md-left mb-md-4 projectbtns">
+                          <a href="https://julian-sirkin.github.io/groceryFrontEnd/#" target="_blank"> Live Site</a>
+                        </button>
+                        <button class="btn d-block float-md-left projectbtns">
+                          <a href="https://github.com/julian-sirkin/GroceryBackend" target="_blank">Back end Repo</a>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-8 offset-md-2">
+                      <h4 class="text-center mt-4 mb-2">
+                        Technologies used
+                      </h4>
+                      <ul class=" list-inline text-center pb-3">
+                        <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" class="col-12" alt="html">
+                        </li>
+                        <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png" class="col-12" alt="html">
+                        </li>
+                        <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                          <img src="https://banner2.kisspng.com/20180503/yhw/kisspng-javascript-logo-html-comment-python-15-5aebb9702a6cb9.1620869015253978721738.jpg" class="col-12" alt="html">
+                        </li>
+                        <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                          <img src="https://icon2.kisspng.com/20180502/heq/kisspng-web-development-jquery-ui-javascript-computer-icon-jqlogo-5ae94a5d3322d7.6814333115252383652095.jpg" class="col-12" alt="html">
+                        </li>
+                        <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                          <img src="https://www.servage.net/blog/wp-content/uploads/2016/10/Bootstrap4.png" class="col-12" alt="html">
+                        </li>
+                        <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                          <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" class="col-12" alt="html">
+                        </li>
+                        <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                          <img src="https://amandeepmittal.gallerycdn.vsassets.io/extensions/amandeepmittal/expressjs/2.0.0/1509881293872/Microsoft.VisualStudio.Services.Icons.Default" class="col-12" alt="html">
+                        </li>
+                        <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                          <img src="http://handlebarsjs.com/images/handlebars_logo.png" class="col-12" alt="html">
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="projectDescription mt-4">
+                      <div class="group float-md-left col-md-6 px-3">
+                        <h4 class="text-center">
+                          Project Overview
+                        </h4>
+                        <p>
+                          The final (full stack) application uses Mongo, Express,
+                           and Node on the backend with Javascript and HTML on
+                           the front end. I am currently rebuilding the front
+                           end using React. The project uses the ‘edamam’
+                           API (https://developer.edamam.com/) and allows the
+                           user to seach for recipes, save favorites to a list,
+                           and to remove recipes from the list. The project
+                           includes the start of an interaction with the
+                           Amazon Fresh API. Their API is not fully functional
+                           yet. When it is, the application will be enhanced to
+                           create a shopping list from the selected recipe(s),
+                            and will also be able to order the groceries from Amazon.
+                        </p>
+                      </div>
+                      <div class="group float-md-left col-md-6 px-3">
+                        <h4 class="text-center">
+                          What I learned
+                        </h4>
+                        <p>
+  The primary lesson I learned from this project was prioritization. My plan
+  was to use the MERN stack. However, due to the very tight project deadline
+  I did not have the time to add React in version 1. As such, I focused on
+  building a more complicated back end (with an HTML and jQuery front end). I
+  am now (after the class) rebuilding the front end using React.
+                              <br>
+  While working through the back end code I learned how to call on a third
+  party API and how to incorporate and parse the query results. This way I am
+  able to use the minimal amount of information (recipe IDs) so I can bundle
+  and query a large amount of information at once (from edamam). This allows me
+   to process the information within my application more efficiently.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End captston page -->
+
+
+                  <!-- Start of group Project -->
+                    <div id="groupProjectPage" class="project hidden">
+                      <h2 class="projectName col-med-6 text-center display-block jusitfy-center mb-3 pb-2 mt-5 mt-md-3">
+                        Bucket List
+                      </h2>
+                      <div class="imgAndLinks">
+                        <div class="float-md-left col-md-4 offset-md-2 mb-4">
+                          <img class="projectimg col-12" src="https://preview.ibb.co/i3QsJe/bucket_list.jpg">
+                        </div>
+
+                        <div class="float-md-left col-md-2 mt-4 mt-md-0 prjbtncontainer">
+                          <button class="btn d-block float-md-left mb-md-4 projectbtns">
+                            <a href="https://github.com/Fire-Breathing-Rubber-Duck-ies/front-end" target="_blank">Front End Repo</a>
+                            </button>
+                          <button class="btn d-block float-md-left mb-md-4 projectbtns">
+                            <a href="https://fire-breathing-rubber-duck-ies.github.io/front-end/" target="_blank">Live Site</a>
+                          </button>
+                          <button class="btn d-block float-md-left projectbtns">
+                            <a href="https://github.com/Fire-Breathing-Rubber-Duck-ies/back-end" target="_blank">Back End Repo</a>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="col-md-8 offset-md-2">
+                        <h4 class="text-center mt-4 mb-2">
+                          Technologies used
+                        </h4>
+                        <ul class=" list-inline text-center pb-3">
+                          <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" class="col-12" alt="html">
+                          </li>
+                          <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png" class="col-12" alt="html">
+                          </li>
+                          <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                            <img src="https://banner2.kisspng.com/20180503/yhw/kisspng-javascript-logo-html-comment-python-15-5aebb9702a6cb9.1620869015253978721738.jpg" class="col-12" alt="html">
+                          </li>
+                          <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                            <img src="https://icon2.kisspng.com/20180502/heq/kisspng-web-development-jquery-ui-javascript-computer-icon-jqlogo-5ae94a5d3322d7.6814333115252383652095.jpg" class="col-12" alt="html">
+                          </li>
+                          <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                            <img src="https://www.servage.net/blog/wp-content/uploads/2016/10/Bootstrap4.png" class="col-12" alt="html">
+                          </li>
+                          <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                            <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" class="col-12" alt="html">
+                          </li>
+                          <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                            <img src="https://amandeepmittal.gallerycdn.vsassets.io/extensions/amandeepmittal/expressjs/2.0.0/1509881293872/Microsoft.VisualStudio.Services.Icons.Default" class="col-12" alt="html">
+                          </li>
+                          <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                            <img src="http://handlebarsjs.com/images/handlebars_logo.png" class="col-12" alt="html">
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="projectDescription mt-4">
+                        <div class="group float-md-left col-md-6 px-3">
+                          <h4 class="text-center">
+                            Project Overview
+                          </h4>
+                          <p>
+                            This project was designed to create a bucket list using: Mongo, Express,
+
+                and Mongoose (for the back end) and Javascript, HTML, and CSS
+                (for the front end). My group decided to create a highly-polished
+                app that would exactly meet the requirements we were given. Users
+                 are able to add items to the bucket list, view details of items,
+                 delete bucket list items, and mark the items as completed.
+                 While this is a simple application, I feel that it really
+                 helped me understand project scope, and how to balance the
+                 scope with the project’s limited timeframe.
+                          </p>
+                        </div>
+                        <div class="group float-md-left col-md-6 px-3">
+                          <h4 class="text-center">
+                            What I learned
+                          </h4>
+                          <p>
+                            This project really helped me learn a lot about team programming
+Best practices. I am used to working in a kitchen “brigade”,
+but the dynamics of software teams are quite different, and
+carry their own challenges. It was different, but truly exciting.
+The most important aspect, I learned, was clear communication
+and a good division of labor.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Group Project -->
+
+                    <!-- Start of Workout Tracker-->
+                      <div id="workoutPage" class="project hidden">
+                        <h2 class="projectName col-med-6 text-center display-block jusitfy-center mb-3 pb-2 mt-5 mt-md-3">
+                          Workout Tracker
+                        </h2>
+                        <div class="imgAndLinks">
+                          <div class="float-md-left col-md-4 offset-md-2 mb-4">
+                            <img class="projectimg col-12" src="https://preview.ibb.co/iAVyrz/Screen_Shot_2018_10_04_at_4_40_52_PM.png">
+                          </div>
+
+                          <div class="float-md-left col-md-2 mt-4 mt-md-0 prjbtncontainer">
+                            <button class="btn d-block float-md-left mb-md-4 projectbtns">
+                              <a href="https://github.com/julian-sirkin/workoutFrontEnd" target="_blank">Front End Repo</a>
+                            </button>
+                            <button class="btn d-block float-md-left mb-md-4 projectbtns">
+                              <a href="https://julian-sirkin.github.io/workoutFrontEnd/#" target="_blank">Live site</a></button>
+                            <button class="btn d-block float-md-left projectbtns">
+                              <a href="https://github.com/julian-sirkin/workoutAPI" target="_blank">Back End Repo</a>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-8 offset-md-2">
+                          <h4 class="text-center mt-4 mb-2">
+                            Technologies used
+                          </h4>
+                          <ul class=" list-inline text-center pb-3">
+                            <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" class="col-12" alt="html">
+                            </li>
+                            <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png" class="col-12" alt="html">
+                            </li>
+                            <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                              <img src="https://banner2.kisspng.com/20180503/yhw/kisspng-javascript-logo-html-comment-python-15-5aebb9702a6cb9.1620869015253978721738.jpg" class="col-12" alt="html">
+                            </li>
+                            <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                              <img src="https://icon2.kisspng.com/20180502/heq/kisspng-web-development-jquery-ui-javascript-computer-icon-jqlogo-5ae94a5d3322d7.6814333115252383652095.jpg" class="col-12" alt="html">
+                            </li>
+                            <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                              <img src="https://www.servage.net/blog/wp-content/uploads/2016/10/Bootstrap4.png" class="col-12" alt="html">
+                            </li>
+                            <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                              <img src="https://cdn.logojoy.com/wp-content/uploads/2017/07/Ruby_on_Rails_logo.png" class="col-12" alt="html">
+                            </li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                          </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="projectDescription mt-4">
+                          <div class="group float-md-left col-md-6 px-3">
+                            <h4 class="text-center">
+                              Project Overview
+                            </h4>
+                            <p>
+                      This was my first full-stack application. It is used to track people’s
+                    workouts. In addition, users can add different exercises to
+                    their workouts. The backend was built with Ruby on Rails,
+                     with a Javascript front end. The backend allows users to
+                     view not only their workouts, but also any exercises
+                     created by any other users. Workouts and exercises are
+                     joined using additional information (such as reps and sets)
+                      to allow for individualization of workouts.
+
+                            </p>
+                          </div>
+                          <div class="group float-md-left col-md-6 px-3">
+                            <h4 class="text-center">
+                              What I learned
+                            </h4>
+                            <p>
+        This project was really useful for several reasons. I became familiar
+        with Ruby on Rails. I was able to take the prompt (CRUD on a single
+        resource) and expand it so I could become more familiar with the
+        framework and concepts. I learned many new things from this, such as
+        destroying dependents, based on relationships in join tables. I also
+        learned something important about myself: When I have extra time, I
+        gravitate towards additional functionality.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Workout Tracker Project -->
+                      <!-- Start of Tic Tac Toe-->
+                        <div id="ticPage" class="project hidden">
+                          <h2 class="projectName col-med-6 text-center display-block jusitfy-center mb-3 pb-2 mt-5 mt-md-3">
+                            Tic Tac Toe
+                          </h2>
+                          <div class="imgAndLinks">
+                            <div class="float-md-left col-md-4 offset-md-2 mb-4">
+                              <img class="projectimg col-12" src="https://preview.ibb.co/hh17Je/Screen_Shot_2018_10_04_at_4_30_34_PM.png">
+                            </div>
+
+                            <div class="float-md-left col-md-2 mt-4 mt-md-0 prjbtncontainer">
+                              <button class="btn d-block float-md-left mb-md-4 projectbtns">
+                                <a href="https://github.com/julian-sirkin/tic-tac-toe" target="_blank">Front End Repo</a></button>
+                              <button class="btn d-block float-md-left mb-md-4 projectbtns"><a href="https://julian-sirkin.github.io/tic-tac-toe/?" target="_blank">Live Site</a></button>
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="col-md-8 offset-md-2">
+                            <h4 class="text-center mt-4 mb-2">
+                              Technologies used
+                            </h4>
+                            <ul class=" list-inline text-center pb-3">
+                              <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" class="col-12" alt="html">
+                              </li>
+                              <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png" class="col-12" alt="html">
+                              </li>
+                              <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                                <img src="https://banner2.kisspng.com/20180503/yhw/kisspng-javascript-logo-html-comment-python-15-5aebb9702a6cb9.1620869015253978721738.jpg" class="col-12" alt="html">
+                              </li>
+                              <li class="list-inline-item col-xl-2 col-md-3 col-4">
+                                <img src="https://icon2.kisspng.com/20180502/heq/kisspng-web-development-jquery-ui-javascript-computer-icon-jqlogo-5ae94a5d3322d7.6814333115252383652095.jpg" class="col-12" alt="html">
+                              </li>
+                              <li class="nav-item"></li>
+                              <li class="nav-item"></li>
+                              <li class="nav-item"></li>
+                              <li class="nav-item"></li>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="projectDescription mt-4">
+                            <div class="group float-md-left col-md-6 px-3">
+                              <h4 class="text-center">
+                                Project Overview
+                              </h4>
+                              <p>
+      A single-page application. This was the first application that I ever built.
+       The point of the project is to learn how to interact with an API (provided)
+       With Ajax calls. Then I had to parse and use the information returned
+       from the server. The project contains a custom game engine and a computer
+       player that can predict the next proper move.
+                              </p>
+                            </div>
+                            <div class="group float-md-left col-md-6 px-3">
+                              <h4 class="text-center">
+                                Learning Process
+                              </h4>
+                              <p>
+    In this project I learned the importance of planning and flexibility. I first
+built the game engine. It was capable of initializing a game and detecting
+victory conditions. As I began working with the API, I realized that I had to
+refactor the game engine. I learned the importance of being willing to
+apart key (already working) sections of the code, and reworking it to  operate with larger future goals.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Tic Tac Toe Project -->
+                </div>
+          </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+
+
+
+
+
+
+<!-- Old stuff
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Julian Sirkin</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      </div>
+    </nav>
+-->
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

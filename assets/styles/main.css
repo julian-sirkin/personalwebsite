@@ -1,0 +1,102 @@
+.hidden {
+  display: none;
+}
+
+#wrapper {
+
+    padding: 0, -15px;
+}
+
+
+/* Sidebar with Navigation */
+#sidebar {
+    /* min-width: 250px;
+    max-width: 250px; */
+    height: 100%;
+    background: #263547;
+    position: fixed;
+    z-index; 1;
+}
+
+
+/* Header, picture, name, contact links */
+.sidebar-header {
+min-height: 20vh;
+background: #263547;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.name {
+  color: #fd4345;
+}
+
+.icon-list {
+  border-bottom: 4px solid #fd4345;
+}
+
+.icon-list a{
+  color: #fff;
+}
+
+.icon-list a:hover {
+  color: #fd4345;
+}
+
+/* Navigation main part */
+.options a{
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.options:hover {
+  background: #fd4345;
+  color: #263547;
+}
+
+
+/* Main Body */
+.maincontent {
+  background: #D3D3D3;
+}
+
+.project {
+  margin-top: -40px;
+}
+
+
+/* Project css */
+
+.workoutimg {
+height: 75%;
+}
+
+.projectbtns {
+  background: #263547;
+  color: #fff;
+}
+
+.projectbtns:hover {
+  background: #fd4345;
+  color: #263547;
+}
+
+.projectDescription h4{
+  color: #fd4345;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #sidebar {
+    position: relative;
+  }
+  .prjbtncontainer button{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+ }
